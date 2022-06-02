@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * *Main puts "Programming is like building a multilingual puzzle
- * 
  */
 int main(void)
 {
