@@ -1,9 +1,8 @@
-#include <stdio.h>
-#include <unistd.h>
+#include<stdio.h>
+#include<unistd.h>
 /**
  * main - Prints and that piece of art
  * Return: 1  
- *
 */
 int main(void)
 {
