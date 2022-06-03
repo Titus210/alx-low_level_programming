@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - Prints and that piece of art is useful" - Dora Korpar, 2015-10-1
+ * main - Prints and that piece of art
  * Return: 1  
+ *
 */
 int main(void)
 {
