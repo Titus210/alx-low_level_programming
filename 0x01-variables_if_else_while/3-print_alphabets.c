@@ -5,20 +5,12 @@
 */
 int main(void)
 {
-	char lower= 'a';
-	char upper= 'A';
+	int c;
 
-	while (lower =< 'z')
-	{
-		putchar(lower);
-		lower++;
-	}
-	while(upper =<'Z')
-	{
-		putchar(upper);
-		upper++;
-	}
-	putchar('\n')
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	for (c = 'A'; c <= 'Z'; c++)  
+		putchar(c);
+	putchar('\n');
 	return (0);
 }
-
