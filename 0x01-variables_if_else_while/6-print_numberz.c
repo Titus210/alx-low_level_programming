@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
  * main - Prints all single digit numbers of base 10 starting from 0
- * return: 0 (on success)
+ * Return: 0 (on success)
  */
 int main(void)
 {
-	int i= '0';
+	int i = '0';
 
-	while(i <= '9')
+	while (i <= '9')
 	{
 		putchar(i);
 		i++;
