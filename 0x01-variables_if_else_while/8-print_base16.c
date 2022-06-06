@@ -15,10 +15,9 @@ int main(void)
 	}
 	while (ch <= 'f')
 	{
-		putchar(ch); 
+		putchar(ch);
 		ch++;
 	}
 	putchar('\n');
 	return (0);
 }
-
