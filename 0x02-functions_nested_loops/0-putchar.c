@@ -5,8 +5,13 @@
  */
 int main(void)
 {
-	char ch = "_putchar";
+	char ch[7] = "_putchar";
+	int i;
 
-	_putchar(ch);
+	for (i=0; i<=7; i++)
+	{
+		_putchar(word[i]);
+	}
 	_putchar('\n');
+  	return (0);
 }
