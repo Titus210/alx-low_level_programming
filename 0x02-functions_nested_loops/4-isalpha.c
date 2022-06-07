@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * _isalpha - Prints number if upper or lower
+ * _isalpha- Prints number if upper or lower
  *  @c: An input
  *  Return: 1 if lower or upper otherwhise 0
  */
