@@ -3,7 +3,7 @@
  * is_lower -checks for lowercase character.
  * Return: 1 if lowercase else 0
  */
-int main(void) 
+int _islower(int) 
 {
 	char ch;
 	int lower = 0;
