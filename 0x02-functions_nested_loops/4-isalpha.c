@@ -9,7 +9,7 @@ int _isalpha(int c)
 	char lowercase, uppercase;
 	int letter = 0;
 
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase+=)
+	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
 		for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 		{
