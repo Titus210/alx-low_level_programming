@@ -1,15 +1,12 @@
 #include "main.h"
 /**
- * print_alphabet -  program that prints _putchar
- * Return: nothing
+ * main -  program that prints _putchar
+ * Return: 0 success
  */
-void print_alphabet(void)
+int main(void)
 {
-	char ch;
-	
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		_putchar(ch);
-	}
+	char ch = "_putchar";
+
+	_putchar(ch);
 	_putchar('\n');
 }
