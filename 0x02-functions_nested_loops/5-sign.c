@@ -1,5 +1,6 @@
 #include "main.h"
-/*print_sign - prints the sign of a number
+/**
+ *print_sign - prints the sign of a number
  *@n: an input
  *Retur: 0,1,-1 depending on condition
  */
