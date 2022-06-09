@@ -4,7 +4,7 @@
  * @c: Input integer
  * Return: 1 if digit else 0
  */
-int _isdigit(int c)
+int _isupper(int c)
 {
 	int i = 0;
 	int digit = 0;
