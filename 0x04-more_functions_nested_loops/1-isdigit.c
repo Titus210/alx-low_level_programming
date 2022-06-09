@@ -4,7 +4,7 @@
  * @c: Input integer
  * Return: 1 if digit else 0
  */
-int _isupper(int c)
+int _isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
