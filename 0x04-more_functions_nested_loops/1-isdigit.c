@@ -7,16 +7,8 @@
  */
 int _isdigit(int c)
 {
-	int i = 0;
-	int digit = 0;
-
-	for (; i < 10; i++)
-	{
-		if (c == i)
-		{
-			digit = 1;
-			break;
-		}
-	}
-	return (digit);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
