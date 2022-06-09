@@ -6,15 +6,5 @@
  */
 int _isupper(int c)
 {
-	int i = 0;
-	int digit = 0;
-
-	for (; i < 10; i++)
-	{
-		if (c == i)
-		{
-			digit = 1;
-		}
-	}
-	return (digit)
+	return (c >= '0' && c <= '9');
 }
