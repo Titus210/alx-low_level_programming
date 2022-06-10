@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - Prints no btwn 0-9
- * Returns: void
+ * Return: void
  */
 void print_numbers(void)
 {
