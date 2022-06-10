@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 /**
  *print_line - raws a straight line in the terminal.
  *@n:number of lines
