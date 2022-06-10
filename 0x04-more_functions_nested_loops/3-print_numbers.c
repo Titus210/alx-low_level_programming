@@ -1,13 +1,15 @@
 #include "main.h"
 /**
- * print_numbers - Prints no btwn 0-9
+ * print_numbers - entry point
  * Return: void
  */
 void print_numbers(void)
 {
-	int i;
+	int number;
 
-	for (i = 0; i < 10; i++)
-		_putchar(i);
+	for (number = '0'; number <= '9'; number++)
+	{
+		_putchar(number);
+	}
 	_putchar('\n');
 }
