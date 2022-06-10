@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - Prints no btwn 0-9
- * Returns:0
+ * Returns:Void
  */
 void print_numbers(void)
 {
@@ -10,5 +10,4 @@ void print_numbers(void)
 	for (i = 0; i < 10; i++)
 		_putchar(i);
 	_putchar('\n');
-	return (0);
 }
