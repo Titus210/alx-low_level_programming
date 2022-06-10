@@ -3,7 +3,7 @@
  * main - tests function that prints 
  *  Return: 0
  */
-int main(void)
+void positive_or_negative(int i)
 {
 	int i;
 
