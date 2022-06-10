@@ -5,7 +5,7 @@
  */
 void print_most_numbers(void)
 {
-	int i;
+	int number;
 
 	for (i = 0; i < 9; i++)
 	{
