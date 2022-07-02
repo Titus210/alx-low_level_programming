@@ -10,24 +10,26 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	void *space;
+	char *spacecpy, *ptrcpy;
 	unsigned int i;
-	char *reallocated, *ptrCast;
 
-	ptrCast = ptr;
-	if (new_size == old_size)
-		return (ptr);
-	if (ptr == NULL)
-		return (malloc(new_size));
 	if (new_size == 0 && ptr != NULL)
 	{
-		 free(ptr);
-		 return (NULL);
-	}
-	reallocated = malloc(new_size);
-	if (reallocated == NULL)
+		free(ptr);
 		return (NULL);
-	for (i = 0; i < old_size; i++)
-		*(reallocated + i) = *(ptrCast + i);
+	}
+	if (new_size == old_size)
+		return (ptr);
+	space = malloc(new_size);
+	if (space == NULL)
+		return (NULL);
+	if (ptr == NULL)
+		return (space);
+	spacecpy = space;
+	ptrcpy = ptr;
+	for (i = 0; i < old_size && i < new_size; i++)
+		spacecpy[i] = ptrcpy[i];
 	free(ptr);
-	return (reallocated);
+	return (space);
 }
