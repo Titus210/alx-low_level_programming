@@ -1,15 +1,18 @@
 #include "main.h"
+#include <stdlib.h>
 /**
- * malloc_checked- allocates memory using malloc.
- * @b: size of new memory array
- * Return: 98 if null,else memlocate
+ *  malloc_checked - Return pointer to array, or terminate process on fail
+ *   @b: size of memory to allocate
+ *    Return: Pointer to memory space of size b 
  */
 void *malloc_checked(unsigned int b)
 {
-	void *memlocate;
+	void *mem;
 
-	memlocate = malloc(b);
-	if (memlocate == NULL)
+	mem = malloc(b);
+	if (mem == NULL || b == 0)
+	{
 		exit(98);
-	return (memlocate);
+	}
+	return (mem);
 }
