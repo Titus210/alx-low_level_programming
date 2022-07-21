@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * _check_and_print - Check the list recursively and print
  * @head: head of newlist to check
@@ -15,9 +16,9 @@ int _check_and_print(const listint_t *head, listint_safe *prev)
 		return (1);
 	}
 	node.next = prev;
-	node.addy = head;
+	node.sister = head;
 	tmp = node.next;
-	while (tmp != NULL && tmp->addy != head)
+	while (tmp != NULL && tmp->sister != head)
 		tmp = tmp->next;
 	if (tmp != NULL)
 	{
