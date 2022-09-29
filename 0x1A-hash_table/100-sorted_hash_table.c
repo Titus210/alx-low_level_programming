@@ -159,10 +159,10 @@ void shash_table_delete(shash_table_t *ht)
 int replace_value_s(shash_node_t **ht, const char *key, const char *value)
 {
 	shash_node_t *temp = *ht;
-
 	while (temp && strcmp(temp->key, key))
 		temp = temp->next;
 
+	free(temp->value);
 	free(temp->value);
 		return (0);
 	return (1);
@@ -239,3 +239,9 @@ void free_list_s(shash_node_t *head)
 		head = temp;
 	}
 }
+#include "hash_tables.h"
+
+/**
+ * shash_table_create - creates a hash table
+ * @size: size of the array of linked list
+ * Return: shash_table_t struct
